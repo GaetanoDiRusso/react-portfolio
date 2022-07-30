@@ -1,0 +1,85 @@
+@import '../../../../../../../../theme.module.scss';
+
+.mainContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 12px;
+    box-shadow: 0 0 5px 1px $black;
+    background-color: $white;
+    border-radius: 50px 5px 50px 5px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+    .textContainer {
+        flex: 1;
+        padding: 12px;
+        font-size: $projectDescriptionSize;
+        color: $projectDescriptionColor;
+        border: 2px solid $primary;
+        // box-shadow: 0 0 10px 1px $secondary;
+        border-radius: 42px 5px 5px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .linksContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        a {
+            flex: 1;
+            padding: 10px 0;
+            border: none;
+            background: none;
+            color: $white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            transition: background-color 0.3s ease-in-out;
+
+            &.repositoryButton {
+                border-radius: 5px 5px 45px 5px;
+                background-color: $gray;
+                box-shadow: 0 0 5px 1px $black;
+
+                &:hover {
+                    background-color: $black;
+                }
+
+                img {
+                    height: 25px;
+                }
+            }
+
+            &.demoButton {
+                border-radius: 5px;
+                background-color: $secondary;
+                box-shadow: 0 0 7px 1px $secondary;
+
+                &:hover {
+                    background-color: $primary;
+                }
+
+                img {
+                    height: 25px;
+                    color: $white;
+                }
+
+                &.roundedBorder {
+                    border-radius: 5px 5px 45px 5px;
+                }
+            }
+        }
+    }
+}

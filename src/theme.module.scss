@@ -1,0 +1,79 @@
+$primary: #0080ff;
+$secondary: #6BC4FF;
+
+$white: #f8f8f8;
+$black: #2b2a2a;
+$gray: #817e7e;
+$success: green;
+$error: red;
+
+$grayText: #464646;
+
+//NAVBAR
+    $navbarHeight: 75px;
+    $navbarTop: 40px;
+    $navbarLeftRight: 50px;
+
+    //Buttons
+    $marginNavButton: 0 30px;
+    $fontWeightNavButton: 700;
+    $fontSizeNavButton: 13px;
+
+    //Download Button
+    $downloadButtonBorderRadius: 50px;
+//
+
+//TECNOLOGY PREV
+    $tecnologyFontSize: 10px;
+    $tecnologyIconHeight: 15px;
+//
+
+//HOME SECTIONS
+    //Section title
+    $sectionTitleMarginBottom: 40px;
+
+    //Section description text
+    $sectionDescriptionTextColor: $grayText;
+//
+
+//PROJECT SECTION
+    $projectTitleSize: 25px;
+    $projectTitleColor: $grayText;
+
+    $projectQuickDescriptionSize: 12px;
+
+    $projectDescriptionSize: 15px;
+    $projectDescriptionColor: $grayText;
+
+//
+
+//RESPONSIVE
+    $responsiveSectionTitleSize: 12px;
+    $responsiveSectionDescriptionSize: 14px;
+//
+
+//BREAKPOINTS
+    @mixin md {
+        @media (max-width: 1130px) {
+            @content;
+        }
+    }
+
+    @mixin md-sm {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+
+    @mixin sm {
+        @media (max-width: 749px) {
+            @content;
+        }
+    }
+
+    @mixin xs {
+        @media (max-width: 700px) {
+            @content;
+        }
+    }
+//

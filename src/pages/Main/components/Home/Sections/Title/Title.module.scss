@@ -1,0 +1,46 @@
+@import '../../../../../../theme.module.scss';
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    width: 100%;
+    height: 200px;
+
+
+    @include md {
+        justify-content: center;
+    }
+
+    @include sm {
+        height: 150px;
+    }
+
+    .nameContainer {
+        width: 55%;
+        max-width: 400px;
+        font-size: 28px;
+
+        @include sm {
+            font-size: 4vw;
+        }
+    }
+
+    .positionContainer {
+        width: 35%;
+        max-width: 200px;
+        text-transform: uppercase;
+        font-size: 14px;
+
+        @include sm {
+            font-size: 2vw;
+        }
+    }
+
+    .verticalLineContainer {
+        width: 10%;
+        display: flex;
+        height: 100%;
+    }
+}

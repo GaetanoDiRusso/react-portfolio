@@ -1,0 +1,26 @@
+@import '../../../../../../theme.module.scss';
+
+.mainContainer {
+    width: 100%;
+    height: 100%;
+
+    .first {
+        text-align: start;
+    }
+
+    .second {
+        text-align: end;
+    }
+
+    .primary {
+        color: $primary;
+    }
+
+    // .secondary {
+    //     color: $secondary;
+    // }
+
+    .black {
+        color: $black;
+    }
+}

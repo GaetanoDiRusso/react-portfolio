@@ -1,0 +1,21 @@
+@import '../../../../../../../theme.module.scss';
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    color: $sectionDescriptionTextColor;
+
+    .infoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        .icon {
+            color: $primary;
+            font-size: 25px;
+            margin-right: 5px;
+        }
+    }
+}

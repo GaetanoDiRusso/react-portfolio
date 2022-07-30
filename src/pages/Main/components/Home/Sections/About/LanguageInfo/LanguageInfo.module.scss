@@ -1,0 +1,108 @@
+@import '../../../../../../../theme.module.scss';
+
+$borderButtonRadius: 50px;
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+
+    .languageNameContainer {
+        border-radius: 50px;
+        border: 5px solid $white;
+        width: 30%;
+        max-width: 200px;
+        background-color: $white;
+        z-index: 1;
+
+        .languageNameInner {
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            border-radius: $borderButtonRadius;
+            border: 1px solid $primary;
+            display: flex;
+
+            h1{
+                margin: auto;
+                font-weight: 700;
+                font-size: 18px;
+                text-transform: uppercase;
+
+                @include sm {
+                    font-size: $responsiveSectionDescriptionSize;
+                }
+            }
+        }
+    }
+
+    .languageDescriptionContainer {
+        right: 0;
+        width: 80%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0 50px 50px 0px;
+        background-color: $primary;
+        margin-left: -$borderButtonRadius / 2;
+        padding-left: $borderButtonRadius / 2;
+
+        .languageDescription {
+            width: 100%;
+            padding: 3px 3px 3px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+                color: $white;
+                font-size: 15px;
+                font-weight: 400;
+
+                @include sm {
+                    font-size: 12px
+                }
+            }
+
+            a {
+                height: 100%;
+                width: 35%;
+                padding: 5px;
+                max-width: 150px;
+                background: none;
+                border: 1px solid $white;
+                border-radius: $borderButtonRadius;
+                text-transform: uppercase;
+                color: $white;
+                font-weight: 500;
+                transition: all 0.3s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                font-size: 12px;
+                text-align: center;
+
+                .downloadIcon {
+                    font-size: 20px;
+                }
+
+                h3 {
+                    width: 100px;
+                    margin: 0;
+                    font-size: 13px;
+                    font-weight: 500;
+
+                    @include sm {
+                        font-size: 10px
+                    }
+                }
+
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

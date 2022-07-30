@@ -1,0 +1,40 @@
+@import '../../../../../../../theme.module.scss';
+
+.mainContainer {
+    height: 400px;
+    width: 320px;
+    max-width: 320px;
+    position: relative;
+
+    &:hover .backContainer {
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    &:hover .frontContainer {
+        z-index: 0;
+        top: -10px;
+        left: -10px;
+    }
+
+    .frontContainer {
+        position: absolute;
+        height: calc(100% - 10px);
+        width: calc(100% - 10px);
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .backContainer {
+        position: absolute;
+        height: calc(100% - 10px);
+        width: calc(100% - 10px);
+        top: -10px;
+        left: -10px;
+        z-index: 0;
+        transition: all 0.3s ease-in-out;
+    }
+}

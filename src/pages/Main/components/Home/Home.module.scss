@@ -1,0 +1,24 @@
+@import "../../../../theme.module.scss";
+
+.mainContainer {
+  height: 100%;
+  width: 100%;
+
+  padding: 0 50px;
+
+  @include md {
+    padding: 0 20px;
+  }
+
+  .sectionContainer{
+    padding: 100px 0px;
+  }
+
+  .sectionDivider {
+    width: 100%;
+    height: 2px;
+    background-color: $primary;
+    border-radius: 2px;
+    // box-shadow: 0 0 2px rgba(0,0,0, 0.5);
+  }
+}

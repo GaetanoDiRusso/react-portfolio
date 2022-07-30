@@ -1,0 +1,15 @@
+@import '../../../../../../theme.module.scss';
+
+.mainContainer {
+    .titleContainer {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        gap: 10px;
+        margin-bottom: $sectionTitleMarginBottom;
+
+        @include sm {
+            font-size: $responsiveSectionTitleSize
+        }
+    }
+}

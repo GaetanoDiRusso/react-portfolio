@@ -1,0 +1,57 @@
+@import "../../../../theme.module.scss";
+
+.mainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $navbarHeight - 15px;
+    padding: 0 30px;
+    border: 1px solid $primary;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+    background: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    @include xs {
+        margin: 0;
+    }
+
+    &:hover{
+        background-color: $primary;
+        color: $white;
+    }
+
+    &:after {
+        content: 'download cv'
+    }
+
+    .downloadButton {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    @include md-sm {
+        &:after {
+            content: 'cv'
+        }
+        width: $navbarHeight - 5px;
+        padding: 0;
+
+        .downloadButton {
+            margin-right: 5px;
+        }
+    }
+
+    @include xs {
+        background-color: $primary;
+        color: $white;
+        .downloadButton {
+            margin: 0;
+        }
+    }
+}

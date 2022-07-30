@@ -1,0 +1,53 @@
+@import '../../../../../../../theme.module.scss';
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    .formContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 550px;
+        flex: 1;
+
+        .submitButton {
+            height: 60px;
+            width: 40%;
+            border: 1px solid $primary;
+            border-radius: 50px;
+            background: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.1s;
+
+            &:hover:not([disabled]) {
+                border: 3px solid $primary;
+                color: $primary;
+            }
+
+            &:disabled {
+                border-color: $black;
+                cursor: default;
+            }
+
+            @include sm {
+                &:not([disabled]) {    
+                    color: $primary;
+                }
+            }
+        }
+
+        .success:disabled {
+            border: 3px solid $success;
+            color: $success;
+        }
+
+        .error:disabled {
+            border: 3px solid $error;
+            color: $error;
+        }
+    }
+}

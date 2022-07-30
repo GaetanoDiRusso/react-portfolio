@@ -1,0 +1,26 @@
+@import '../../../../../../theme.module.scss';
+
+.mainContainer {
+    .titleContainer {
+        display: flex;
+        height: 160px;
+        gap: 10px;
+        margin-bottom: $sectionTitleMarginBottom;
+        align-items: center;
+        font-size: 20px;
+
+        @include sm {
+            font-size: $responsiveSectionTitleSize;
+            height: 100px;
+        }
+    }
+
+    .descriptionContainer {
+        color: $sectionDescriptionTextColor;
+        margin-bottom: $sectionTitleMarginBottom;
+
+        @include sm {
+            font-size: $responsiveSectionDescriptionSize;
+        }
+    }
+}

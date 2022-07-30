@@ -1,0 +1,14 @@
+@import '../../../../../theme.module.scss';
+
+.mainContainer {
+    display: flex;
+    height: 100%;
+    margin: 0 10px;
+    gap: 4px;
+
+    .verticalLine{
+        height: 100%;
+        width: 2px;
+        background-color: $primary;
+    }
+}

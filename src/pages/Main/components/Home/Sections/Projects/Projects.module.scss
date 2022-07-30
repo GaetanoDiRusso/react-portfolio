@@ -1,0 +1,31 @@
+@import '../../../../../../theme.module.scss';
+
+
+.mainContainer {
+    .titleContainer {
+        display: flex;
+        height: 60px;
+        gap: 10px;
+        margin-bottom: $sectionTitleMarginBottom;
+        align-items: center;
+    }
+
+    .descriptionContainer {
+        color: $sectionDescriptionTextColor;
+        margin-bottom: $sectionTitleMarginBottom;
+    }
+
+    .projectsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        gap: 30px;
+    }
+
+    .project {
+        height: 400px;
+        width: 45%;
+        max-width: 310px;
+    }
+}

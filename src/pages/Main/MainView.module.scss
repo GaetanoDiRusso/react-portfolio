@@ -1,0 +1,71 @@
+@import '../../theme.module.scss';
+
+.loadingContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: $white;
+
+    @include md {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.imageContainer {
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    @include md {
+        position: static;
+        height: 30vh;
+        width: 30vh;
+        max-width: 400px;
+        max-height: 400px;
+        margin-top: $navbarHeight + $navbarTop + 50px;
+
+        border-radius: 100%;
+        overflow: hidden;
+        box-shadow: 0 0 10px 1px $gray;
+    }
+}
+
+.navbarContainer {
+    position: fixed;
+    height: $navbarHeight;
+    width: auto;
+    top: $navbarTop;
+    left: $navbarLeftRight;
+    right: $navbarLeftRight;
+    z-index: 1000;
+
+    @include sm {
+        left: $navbarLeftRight - 30px;
+        right: $navbarLeftRight - 30px;
+        top: $navbarTop - 20px;
+    }
+}
+
+.homeContainer {
+    margin-left: 40%;
+    padding-top: $navbarHeight + $navbarTop;
+    margin-right: $navbarLeftRight + 20px;
+    width: 100%;
+
+    box-shadow: 0 0 3px 1px rgba(153, 153, 153, 0.57);
+
+    @include md {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+}
